@@ -18,12 +18,7 @@ namespace Testing
         {
             return _conn.Query<Product>("Select * From products");
         }
-
-        public IActionResult ViewProduct(int id)
-        {
-            var product = repo.GetProduct(id);
-            return View(product);
-        }
+                
 
         public Product GetProduct(int id)
         {
